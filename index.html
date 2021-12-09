@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +9,44 @@
   </head>
   <body>
     <header>
-      <h1>Jordan Cousin</h1>
+      <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+           <h1>Jordan Cousin</h1>
+      </nav>
     </header>
     <main>
-      <ul id="navigation">
-        <li><a href="#" title="menu">menu</a></li>
-        <li><a href="#" title="profil">profil</a></li>
-        <li><a href="#" title="contact">contact</a></li>
-        <li><a href="#" title="compétences">compétences</a></li>
-      </ul>
-      <section>
-        <div class="prez">
+      <section id="presentation">
+        <div class="description">
           <h2>Technicien Help-Desk</h2>
-          <p>Souhaitant me spécialiser dans le domaine de l'informatique, j'aimerais acquérir des compétences afin d'exercer dans ce métier d'avenir.
-          Dynamique, courageux et perseverant, j'apprends très vite et met en pratique mes connaissances dans les taches qui me seront confiées.</p>
+          <p>Souhaitant me spécialiser dans le domaine de l'informatique, j'aimerais acquérir des compétences afin d'exercer dans ce métier d'avenir. Dynamique, courageux et rigoureux, j'apprends très vite et met en pratique mes connaissances dans les tâches qui me seront confiées.</p>
           <div class="">
-      <a href="img/cv-Jordan-Cousin.pdf" download class="btn" role="button" aria-pressed="true">Télécharger mon CV</a>
+            <a href="img/cv-Jordan-Cousin.pdf" download class="btn" role="button" aria-pressed="true">Télécharger mon CV</a>
+          </div>
         </div>
-        </div>
-        <div class="profil">
+        <div class="Profil">
           <h2>Profil</h2>
           <div class="">
-            <p>Nom </p>
-            <p>Cousin Jordan</p>
+            <h4>Nom <span>Cousin Jordan</span></h4>
+            <p></p>
+            <p></p>
           </div>
           <div class="Adresse">
-            <p>Adresse </p>
+            <p>Adresse</p>
             <p>2, rue Pasteur - 59880 Saint-Saulve</p>
           </div>
           <div class="Naissance">
-            <p>Naissance  </p>
+            <p>Naissance</p>
             <p>28/04/92</p>
           </div>
           <div class="Téléphone">
@@ -49,46 +57,89 @@
             <img src="https://img.icons8.com/pastel-glyph/64/000000/email--v3.png"/>
             <p><a href="mailto:cousin.jordan2804@gmail.com">cousin.jordan2804@gmail.com</a><p/>
           </div>
-          <div class="contact-flex">
-            <p>Permis </p>
+          <div class="Contact-flex">
+            <p>Permis</p>
             <p>B</p>
-          </div>
-          <div class="Compétences">
-            <h2>Compétences</h2>
-              <p>- régler les problèmes rencontrés par les utilisateurs</p>
-              <p>- diagnostiquer une panne et/ou résoudre un dysfonctionnement numérique</p>
-              <p>- mettre a jour une documentation technique</p>
-              <p>- commander et changer les pièces défectueuses</p>
-              <p>- volonté d'apprendre</p>
-              <p>- gestion du stress</p>
-              <p>- travail d'équipe</p>
-          </div>
-            <div class="Formations">
-              <h2>Formations</h2>
-              <p>2019-2020 - Pro Formation</p>
-              <p>2018-2019 - AREP Centre de formation, Valenciennes - Modules informatiques - Base Excell+Word</p>
-            <div class="Experiences professionnelles">
-              <h2>Experiences professionnelles</h2>
-              <p>2021-2022 - Ageval Valenciennes - Atelier numérique</p>
-              <p>2020  - Michelin Prouvy-Rouvignies - Agent de magasinage</p>
-              <p>2015 - Crèche "Les Lutins" - Auxiliaire de puériculture</p>
-            </div>
-            </div>
-          <div class="social">
-            <a href="https://fr-fr.facebook.com/"><img src="img/logo-facebook.png" alt="logo-facebook"></a>
-            <a href="https://twitter.com/"><img src="img/logo-twitter.png" alt="logo-twitter"></a>
-            <a href="https://www.linkedin.com/feed/"><img src="img/logo-linkedin.png" alt="logo-linkedin"></a>
           </div>
         </div>
       </section>
-      <section>
-        <h2></h2>
-        <div class="">
-        </div>
+      <section id="competences">
+          <h2>compétences</h2>
+          <ul>
+            <li>régler les problèmes rencontrés par les utilisateurs</li>
+            <li>diagnostiquer une panne et/ou résoudre un dysfonctionnement numérique</li>
+            <li>mettre à jour une documentation technique</li>
+            <li>commander et changer les pièces défectueuses</li>
+            <li>volonté d'apprendre</li>
+            <li>gestion du stress</li>
+            <li>travail d'équipe</li>
+          </ul>
+      </section>
+      <section id="experiences">
+          <h2>Experiences professionnelles</h2>
+          <div class="card">
+            <div class="title">2021 - 2022</div>
+            <div class="subtitle">Association Ageval</div>
+
+            <div class="icon">
+              <img src="https://th.bing.com/th/id/R.e9c0044e761699148b811ed6e772bb95?rik=ZfHLZLZAlz1fFw&riu=http%3a%2f%2fwww.ageval.net%2fthemes%2fsite_themes%2fageval%2fdefault_site%2fimg%2fageval%2flogo.png&ehk=MEI0FwJcxpMgGlyLfOcndndOUQEsZbyN4UaxdnVJVVI%3d&risl=&pid=ImgRaw&r=0" alt="logo-ageval.png">
+            </div><!--/icon-->
+            <div class="features">
+              <ul>
+                <li>Atelier numérique</li>
+                <li>Web design</li>
+                <li>Création de site internet</li>
+                <li>Codage</li>
+              </ul>
+            </div><!--/features-->
+          </div><!--/card-->
+          <div class="card">
+            <div class="title">Juin 2020 - Aout 2020</div>
+            <div class="subtitle">Michelin Prouvy-Rouvignies</div>
+            <div class="icon">
+              <img src="https://www.epernay.fr/sites/epernay/files/image/article/michelin_logo2.png" alt="michelin_logo2.png">
+            </div><!--/icon-->
+            <div class="features">
+              <ul>
+                <li><span></span>Préparation de commande</li>
+                <li><span></span>Chargement de marchandises</li>
+                <li><span></span>Déchargement de marchandises</li>
+                <li><span></span>Palettisation</li>
+              </ul>
+            </div><!--/features-->
+          </div><!--/card-->
+          <div class="card">
+            <div class="title">Avril 2015 - Juin 2015</div>
+            <div class="subtitle">Crèche "Les Lutins"</div>
+            <div class="icon">
+              <img src="https://th.bing.com/th/id/R.924a527eef572ebed64dba58fd20f41d?rik=aoFibRqNUobvHQ&riu=http%3a%2f%2fwww.lespetitslutins.fr%2fwp-content%2fuploads%2f2016%2f02%2fcropped-titre-site-w.png&ehk=erFFXMkBi%2bgIFDzOH7s55GFVoqtr8lfT0sBK%2fvkACHM%3d&risl=&pid=ImgRaw&r=0" alt="logo-lutins.png">
+            </div><!--/icon-->
+            <div class="features">
+              <ul>
+                <li><span></span>Accueillir, informer et accompagner les enfants et la famille</li>
+                <li><span></span>Aider le personnel médical à prodiguer des soins</li>
+                <li><span></span>Gestion des stocks</li>
+                <li><span></span>Entretien de l’environnement de l’enfant et sa mère</li>
+              </ul>
+            </div><!--/features-->
+          </div><!--/card-->
+
+
+
+
+          <p>2021-2022 - Ageval Valenciennes - Atelier numérique</p>
+          <p>Juin 2020 - Aout 2020 - Michelin Prouvy-Rouvignies - Agent de magasinage</p>
+          <p>Avril 2015 - Juin 2015 - Crèche "Les Lutins"- Auxiliaire de puériculture </p>
+      </section>
+      <section id="formations">
+        <h2>Formations</h2>
+        <p>2019-2020 - Pro Formation</p>
+        <p>2018-2019 - Arep Centre de formation, Valenciennes - Modules informatiques - Base Excell + Word</p>
       </section>
     </main>
     <footer>
-      <p>Copyright Jordan Cousin - Toute reproduction interdite</p>
+      <p>© Jordan Cousin 2021-2022</p>
+      <p>Reproduction à des fins commerciales interdite.</p>
     </footer>
   </body>
 </html>
