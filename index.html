@@ -9,20 +9,19 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
- </div>
   </body>
     <header>
       <nav role="navigation">
             <div id="menuToggle">
-              <input type="checkbox"/>
+              <input type="checkbox" id="nav-checkbox"/>
+              <label for="nav-checkbox"></label>
                 <span></span>
                 <span></span>
                 <span></span>
             <ul id="menu">
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">A propos</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#competences" onclick="triggerOff()">Compétences</a></li>
+              <li><a href="#experiences" onclick="triggerOff()">Expériences professionnelles</a></li>
+              <li><a href="#formations" onclick="triggerOff()">Formations</a></li>
             </ul>
            </div>
            <h1>Jordan Cousin</h1>
@@ -30,23 +29,16 @@
     </header>
     <main>
       <div class ="frame">
-     <a href="#" class="btn">
-       <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+     <a href="https://www.linkedin.com/in/jordan-cousin-0713a4225/" class="btn">
+       <i class="fab fa-linkedin-in fa-3x" style="color:#0e76a8;"></i>
+     <a href="tel:0678290919" class="btn">
+       <i class="fas fa-phone fa-3x" style="color:#ffffff;"></i>
      </a>
-     <a href="#" class="btn">
-       <i class="fab fa-twitter" style="color: #00acee;"></i>
+     <a href="https://mail.google.com/mail/u/0/?hl=fr#inbox" class="btn">
+       <i class="far fa-envelope fa-3x" style="color:#c41414;"></i>
      </a>
-     <a href="#" class="btn">
-       <i class="fab fa-dribbble" style="color: #ea4c89;"></i>
-     </a>
-     <a href="#" class="btn">
-       <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
-     </a>
-     <a href="#" class="btn">
-       <i class="fab fa-get-pocket" style="color:#ee4056;"></i>
-     </a>
-     <a href="#" class="btn">
-       <i class="far fa-envelope"></i>
+     <a href="https://github.com/Jordan598" class="btn">
+       <i class="fab fa-github fa-3x" style="color:#000000;"></i>
      </a>
      </div>
       <section id="presentation">
@@ -54,12 +46,12 @@
           <h2>Technicien Help-Desk</h2>
           <p>Souhaitant me spécialiser dans le domaine de l'informatique, j'aimerais acquérir des compétences afin d'exercer dans ce métier d'avenir. Dynamique, courageux et rigoureux, j'apprends très vite et met en pratique mes connaissances dans les tâches qui me seront confiées.</p>
           <div class="">
-            <a href="img/cv-Jordan-Cousin.pdf" download class="btn" role="button" aria-pressed="true">Télécharger mon CV</a>
+            <a href="img/cv-Jordan-Cousin.pdf" alt="lien pour télécharger mon CV" target="blank" download class="btn" role="button" aria-pressed="true">Télécharger mon CV</a>
           </div>
         </div>
       </section>
       <section id="competences">
-          <h2>compétences</h2>
+          <h2 class="white-p">compétences</h2>
           <div class="competences-container">
             <div class="card-competences">
               <div class="card-illustration">
@@ -145,7 +137,7 @@
 
       </section>
       <section id="formations">
-        <h2>Formations</h2>
+        <h2 class="white-p">Formations</h2>
         <div class="form-card-container">
           <div class="card-formation">
             <div class="card__content">
@@ -186,5 +178,6 @@
       <p>© Jordan Cousin 2021-2022</p>
       <p>Reproduction à des fins commerciales interdite.</p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
